@@ -24,11 +24,19 @@
 
 @property (strong, nonatomic) NSArray *places;
 
+@property (strong, nonatomic) NSArray *fulfillmentPlaces;
+
 /** Minimum number of seconds between subsequent presentations of the campaign 
     if -1, it means that the campaign should only be presented once */
 @property (strong, nonatomic) NSNumber *minRecurSecs;
 
 @property (strong, nonatomic) CKPlace *foundAt;
+
+@property (nonatomic) BOOL viewed;
+@property (nonatomic) NSNumber* viewCount;
+
+@property (nonatomic) BOOL fulfilled;
+
 
 -(id)initWithCoder:(NSCoder *)coder;
 -(void)encodeWithCoder:(NSCoder *)coder;

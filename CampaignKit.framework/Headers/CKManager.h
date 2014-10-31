@@ -127,6 +127,23 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
 - (void)setPartnerIdentifier:(NSString *)identifier;
 
 /*!
+ * Mark a campaign as "viewed" for the purposes of analytics.
+ *
+ */
+- (void)setCampaignViewed:(CKCampaign*)campaign;
+
+
+/*!
+ * Mark a campaign as "fulfilled" for the purposes of analytics.
+ *
+ * Note: if you have set a fulfillment/redemption place for a campaign, this will happen
+ * automatically when that place is encountered.  A campaign must have been "viewed" in
+ * order for it to be fulfilled.
+ *
+ */
+- (void)setCampaignFulfilled:(CKCampaign*)campaign atPlace:(CKPlace*)place;
+
+/*!
  Record an analytics event which references a campaign and a place
  */
 - (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign atPlace:(CKPlace *)place;
