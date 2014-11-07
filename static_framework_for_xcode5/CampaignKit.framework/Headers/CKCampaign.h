@@ -37,6 +37,8 @@
 
 @property (nonatomic) BOOL fulfilled;
 
+@property (readonly, nonatomic) BOOL foregroundOnly;
+
 
 -(id)initWithCoder:(NSCoder *)coder;
 -(void)encodeWithCoder:(NSCoder *)coder;
