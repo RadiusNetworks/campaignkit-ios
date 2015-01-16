@@ -103,6 +103,31 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  */
 - (void)syncWithCompletionHandler:(void ( ^ ) ( UIBackgroundFetchResult ))completionHandler;
 
+
+/*! handleRemoteNotification:fetchCompletionHandler:
+ 
+ Takes the `userInfo` from a remote notification payload, syncs if necessary and triggers campaigns
+ if there are any for the current location.
+ 
+ Currently this method will cause a sync if any Places from your kit have been detected in the
+ last 6 hours.  This is to handle the use case where a user might already be at a location, a new campaign
+ is added for that location, and a "silent" push notification is sent in order to trigger this new campaign.
+
+ Example Usage:
+ 
+    - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+        fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+    {
+        NSLog(@"Remote Notification received");
+        [self.campaignKitManager handleRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+    }
+
+ */
+- (void)handleRemoteNotification:(NSDictionary *)userInfo
+          fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+
+
+
 /*!
  Add a campaign to the list of current campaigns
  */
