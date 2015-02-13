@@ -186,10 +186,21 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
 @property (assign) id <CKManagerDelegate> delegate;
 
 /*!
+ Deprecated: please use foundCampaigns instead.
+ */
+@property (readonly) __attribute__((deprecated)) NSArray *campaigns;
+
+/*!
  Contains a list of all the campaigns that the app has found.
  
  This can be used to populate a TableView with all currently active campaigns that the app has encountered.
  */
-@property (readonly) NSArray *campaigns;
+@property (readonly) NSArray *foundCampaigns;
+
+/*!
+ Contains the list of all active campaigns, including campaigns that will start
+ in the future.
+ */
+@property (readonly) NSArray *activeCampaigns;
 
 @end
