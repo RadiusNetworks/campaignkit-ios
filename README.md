@@ -1,4 +1,4 @@
-[![Campaign Kit by Radius Networks](http://www.radiusnetworks.com/img/github/campaignkit-readme-header.png)](https://campaignkit.radiusnetworks.com)
+[![Campaign Kit by Radius Networks](logo.png)](https://campaignkit.radiusnetworks.com)
 
 The Campaign Kit cloud service and mobile SDK from [Radius
 Networks](http://www.radiusnetworks.com/)
