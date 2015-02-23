@@ -52,6 +52,13 @@
  */
 - (BOOL)isActive;
 
+/** isExpired
+ *
+ * returns `YES` if the campaign has expired, otherwise returns `NO`.
+ *
+ */
+- (BOOL)isExpired;
+
 - (BOOL)isEqual:(id)object;
 - (BOOL)canDetect;
 - (void)detect;

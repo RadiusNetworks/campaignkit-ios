@@ -183,6 +183,24 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  */
 - (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign;
 
+/*!
+ Registers a device token with the Campaign Kit server
+ 
+ Example Usage:
+ 
+    - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+    {
+        [self.campaignKitManager registerDeviceToken:deviceToken];
+    }
+ 
+ */
+- (void)registerDeviceToken:(NSData *)deviceToken;
+
+/*!
+ De-registers a device token with the Campaign Kit server
+ */
+- (void)deregisterDeviceToken;
+
 @property (assign) id <CKManagerDelegate> delegate;
 
 /*!
