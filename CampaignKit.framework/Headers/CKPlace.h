@@ -35,6 +35,16 @@ typedef NS_ENUM (NSInteger, CKPlaceType) {
  */
 @property (readonly) CKPlaceType type;
 
+/** For beacon places, this is the proximity to the beacon */
+@property (readonly) CLProximity proximity;
+
+/** For beacon places, this is the one sigma horizontal accuracy in meters */
+@property (readonly) CLLocationAccuracy accuracy;
+
+/** For beacon places, this is the received signal strength of the beacon, measured in decibels */
+@property (readonly) NSNumber *rssi;
+
+
 - (CKPlace *)initWithRegion:(RPKRegion *)region;
 - (CKPlace *)initWithDict:(NSDictionary *)dict;
 - (id)initWithCoder:(NSCoder *)coder;

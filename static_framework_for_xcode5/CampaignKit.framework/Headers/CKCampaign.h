@@ -30,6 +30,8 @@
     if -1, it means that the campaign should only be presented once */
 @property (strong, nonatomic) NSNumber *minRecurSecs;
 
+@property (strong, nonatomic) NSNumber *triggerDistance;
+
 @property (strong, nonatomic) CKPlace *foundAt;
 
 @property (nonatomic) BOOL viewed;
