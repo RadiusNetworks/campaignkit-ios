@@ -1,6 +1,0 @@
-framework module CampaignKit {
-  umbrella header "CampaignKit.h"
-
-  export *
-  module * { export * }
-}
