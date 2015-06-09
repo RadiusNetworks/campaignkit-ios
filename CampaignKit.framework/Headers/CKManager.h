@@ -201,6 +201,13 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  */
 - (void)deregisterDeviceToken;
 
+/*!
+ * Sets the instance of Urban Airship SDK Manager for integrating the service with
+ * campaign Kit.
+ *
+ */
+- (void)setAirship:(id)sharedAirship;
+
 @property (assign) id <CKManagerDelegate> delegate;
 
 /*!
