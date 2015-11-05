@@ -44,6 +44,8 @@ typedef NS_ENUM (NSInteger, CKPlaceType) {
 /** For beacon places, this is the received signal strength of the beacon, measured in decibels */
 @property (readonly) NSNumber *rssi;
 
+/** Custom attributes, as defined in the portal */
+@property (readonly) NSDictionary *attributes;
 
 - (CKPlace *)initWithRegion:(RPKRegion *)region;
 - (CKPlace *)initWithDict:(NSDictionary *)dict;
