@@ -29,6 +29,8 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
 
 
 /*! Returns a new instance of a `CKManager` that uses the supplied delegate to delivery events.
+ 
+ Reads the configuration settings from the CampaignKit.plist file.
 
  Example usage:
  
@@ -42,6 +44,14 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  @see CKManagerDelegate
  */
 + (CKManager *)managerWithDelegate:(id <CKManagerDelegate> )delegate;
+
+/*! Returns a new instance of a `CKManager` that uses the supplied delegate to delivery events.
+ 
+ Reads the configuration settings from the supplied dictionary.
+
+ @see CKManagerDelegate
+ */
++ (CKManager *)managerWithDelegate:(id <CKManagerDelegate> )delegate andConfig:(NSDictionary *)config;
 
 /**
  * returns an instance of CKCampaign with the given id.
@@ -207,6 +217,13 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  *
  */
 - (void)setAirship:(id)sharedAirship;
+
+
+/*!
+ * Set the logging level of the SDK
+ *
+ */
+- (void)logLevel:(NSInteger)level;
 
 @property (assign) id <CKManagerDelegate> delegate;
 
