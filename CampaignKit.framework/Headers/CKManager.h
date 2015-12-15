@@ -12,6 +12,7 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
     CKAnalyticsFulfilled,
 };
 
+@class RPKManager;
 
 /** CKManager
  *
@@ -224,6 +225,10 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  *
  */
 - (void)logLevel:(NSInteger)level;
+
+
+
+@property (readonly) RPKManager *pkManager;
 
 @property (assign) id <CKManagerDelegate> delegate;
 
