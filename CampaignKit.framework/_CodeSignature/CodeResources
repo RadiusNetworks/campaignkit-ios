@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/CKManager.h</key>
 		<data>
-		fBb0/G3ek+CKuLivIkCCYX5WWSI=
+		RN6dSWoMSCJ0B4W7gkaKMRVqgPc=
 		</data>
 		<key>Headers/CKManagerDelegate.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QjGX3DKeld98FO499egMDL/WlSQ=
+		ZxGV6fe42fyTv60S5JjB50bDTqI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -44,37 +44,93 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/CKCampaign.h</key>
-		<data>
-		EXTXqbcrMW4zSngNSxFSO0BUFC4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			EXTXqbcrMW4zSngNSxFSO0BUFC4=
+			</data>
+			<key>hash2</key>
+			<data>
+			fbBI0cIa0EPmEa057+2r1ph1ASqk1pGGqi7Y8agwUvc=
+			</data>
+		</dict>
 		<key>Headers/CKCampaignAlertView.h</key>
-		<data>
-		ViJGn9e5c8wLoNQrZ8YzgwpcXsk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			ViJGn9e5c8wLoNQrZ8YzgwpcXsk=
+			</data>
+			<key>hash2</key>
+			<data>
+			hmjPfW7tj3SImnsoQ32TgZhTufex9TYljA1QkJnX7MQ=
+			</data>
+		</dict>
 		<key>Headers/CKContent.h</key>
-		<data>
-		NZ4JO+xlTUGil/JSLcItIp1/HVQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			NZ4JO+xlTUGil/JSLcItIp1/HVQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			dvbtNYDNH3jjFSB3Kzk0aGS841fC4AQrIjlR15vmrxM=
+			</data>
+		</dict>
 		<key>Headers/CKManager.h</key>
-		<data>
-		fBb0/G3ek+CKuLivIkCCYX5WWSI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			RN6dSWoMSCJ0B4W7gkaKMRVqgPc=
+			</data>
+			<key>hash2</key>
+			<data>
+			BeT403UsH8kO5WwWklHd+WT/Om42RA/NINCcHgYt/K8=
+			</data>
+		</dict>
 		<key>Headers/CKManagerDelegate.h</key>
-		<data>
-		9gzWQb+4N9MDx6heXUz9oimSUlc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			9gzWQb+4N9MDx6heXUz9oimSUlc=
+			</data>
+			<key>hash2</key>
+			<data>
+			LxQXpxrCIiJAloiNOYRIXeUU2c0fKYwEyHzl6JH1hUw=
+			</data>
+		</dict>
 		<key>Headers/CKPlace.h</key>
-		<data>
-		HOrSEB25Ht0wLMVQLQQDJRjYtbM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOrSEB25Ht0wLMVQLQQDJRjYtbM=
+			</data>
+			<key>hash2</key>
+			<data>
+			AvhAorLkzBMkwbXyrT/9FDgyGNrySihhL0BW5x2wRd4=
+			</data>
+		</dict>
 		<key>Headers/CampaignKit.h</key>
-		<data>
-		I/9yU+6IR/+3rR6rzaSq2EbAYTc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			I/9yU+6IR/+3rR6rzaSq2EbAYTc=
+			</data>
+			<key>hash2</key>
+			<data>
+			VS2XGVDy+myBh+RjAEvBlkkcfJGN/dAf2kBDOfXJ6JU=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		TflEjU4q9yH5vKiwTTyVTsmz7XI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			TflEjU4q9yH5vKiwTTyVTsmz7XI=
+			</data>
+			<key>hash2</key>
+			<data>
+			hpnr0hd9JRuTlyTSWQPl4MrzkOvG/diZdL13ScLHJc4=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

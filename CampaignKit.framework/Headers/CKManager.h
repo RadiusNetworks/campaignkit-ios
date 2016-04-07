@@ -12,6 +12,7 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
     CKAnalyticsFulfilled,
 };
 
+@class RPKManager;
 
 /** CKManager
  *
@@ -178,19 +179,10 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  */
 - (void)setCampaignFulfilled:(CKCampaign*)campaign atPlace:(CKPlace*)place;
 
-/*!
- Record an analytics event which references a campaign and a place
- */
 - (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign atPlace:(CKPlace *)place;
 
-/*!
- Record an analytics event which references a campaign and a place
- */
 - (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign atPlaceId:(NSInteger)placeId;
 
-/*!
- Record an analytics event which references a campaign
- */
 - (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign;
 
 /*!
@@ -224,6 +216,10 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  *
  */
 - (void)logLevel:(NSInteger)level;
+
+
+
+@property (readonly) RPKManager *pkManager;
 
 @property (assign) id <CKManagerDelegate> delegate;
 
