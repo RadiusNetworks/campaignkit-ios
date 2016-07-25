@@ -9,8 +9,10 @@ TODO
 
 ## Install
 
-See the [getting started guide](https://campaignkit.radiusnetworks.com/docs/ios/getting-started)
-for details.
+See the [getting started
+guide](http://developer.radiusnetworks.com/campaignkit/ios/AppleDocs/docs/Docs/How-To.html)
+for details. More details can be found in the
+[documentation](https://campaignkit.radiusnetworks.com/docs/overview).
 
 ## Issues
 
