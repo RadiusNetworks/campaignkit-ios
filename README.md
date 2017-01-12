@@ -9,8 +9,7 @@ TODO
 
 ## Install
 
-See the [getting started guide](https://campaignkit.radiusnetworks.com/docs/ios/getting-started)
-for details.
+See the [documentation](https://campaignkit.radiusnetworks.com/docs/overview) for details.
 
 ## Issues
 
@@ -33,7 +32,7 @@ fix.
 
 ## License
 
-Copyright (c) 2014 by Radius Networks
+Copyright (c) 2017 by Radius Networks
 http://www.radiusnetworks.com
 
 All Rights Reserved
