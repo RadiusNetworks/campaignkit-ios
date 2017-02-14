@@ -221,7 +221,7 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
 
 @property (readonly) RPKManager *pkManager;
 
-@property (assign) id <CKManagerDelegate> delegate;
+@property (weak, nonatomic) id <CKManagerDelegate> delegate;
 
 /*!
  Deprecated: please use foundCampaigns instead.
